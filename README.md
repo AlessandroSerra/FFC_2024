@@ -1,6 +1,6 @@
 # FFC Tutoring Lessons Repository
 
-Welcome to the University of Cagliari Tutoring Lessons repository! This repository is dedicated to storing code and materials created during tutoring sessions at the University of Cagliari. Whether you're a student looking to review concepts covered in sessions or an instructor seeking to share resources, you'll find everything you need right here.
+Welcome to the University of Cagliari Tutoring Lessons repository. This repository is dedicated to storing code and materials created during tutoring sessions at the University of Cagliari. Whether you're a student looking to review concepts covered in sessions or an instructor seeking to share resources, you'll find everything you need right here.
 
 ## Purpose
 
