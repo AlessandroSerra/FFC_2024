@@ -6,20 +6,21 @@ Welcome to the University of Cagliari Tutoring Lessons repository. This reposito
 
 The primary purpose of this repository is to facilitate learning and collaboration among students and instructors at the University of Cagliari. It serves as a central location for storing code samples, exercises, projects, and other educational materials related to the tutoring sessions.
 
-## Content
-
-The repository is organized into several directories, each corresponding to a specific subject, topic, or session. Here's an overview of the directory structure:
-
-Session1/: Contains materials related to the first tutoring session, including code snippets, presentations, and exercises.
-
-More coming soon...
-Additionally, you may find supplementary materials such as README files, documentation, or sample datasets in some directories to aid your understanding of the topics covered.
-
 ## Getting Started
 
 If you're a student looking to access materials from a specific session, simply navigate to the corresponding directory and explore the contents. You'll find code examples, exercises, and any additional resources provided during the session.
 
-If you're an instructor or contributor, feel free to add new materials, correct errors, or improve existing content. Contributions are welcome from anyone interested in enhancing the educational experience for students at the University of Cagliari.
+Before looking up any lessons materials make sure you've setted up your Python Environment correctly. You can find an how-to-guide here [Setup_di_Python.pdf](Setup_di_Python.pdf).
+
+
+## Content
+
+The repository is organized into several directories, each corresponding to a specific subject, topic, or session. Here's an overview of the directory structure:
+
+
+More coming soon...
+Additionally, you may find supplementary materials such as README files, documentation, or sample datasets in some directories to aid your understanding of the topics covered.
+
 
 ## Feedback and Support
 
