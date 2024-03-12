@@ -17,6 +17,8 @@ Before looking up any lessons materials make sure you've setted up your Python E
 
 The repository is organized into several directories, each corresponding to a specific subject, topic, or session. Here's an overview of the directory structure:
 
+0. Brief introduction to the Python language [Intro_Python.ipynb](Introduzione Python).
+
 
 More coming soon...
 Additionally, you may find supplementary materials such as README files, documentation, or sample datasets in some directories to aid your understanding of the topics covered.
