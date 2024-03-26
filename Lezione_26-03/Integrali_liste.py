@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # funzione che d=svolge il ruolo della f(x)
 def funzione(x):
 
-    return x**4 -2*x + 1
+    return x**4 - 2*x + 1
 
 
 # funzione per implementare il metodo dei trapezoidi
@@ -41,7 +41,7 @@ B = 2
 x_list = [np.linspace(A, B, 10*i+1) for i in range(1, 10)]
 y_list = [funzione(x) for x in x_list]      # lista di valori di y relativi alle x
 
-N = len(x_list)                             # lunghezza della liste delle x
+N = len(x_list)                             # lunghezza della liste delle x (uguale a quella delle y)
 
 valore_esatto = np.array([4.4] * N)         # lista contenente N volte il valore esatto per poterlo plottare
 
