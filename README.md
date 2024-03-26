@@ -17,7 +17,9 @@ Before looking up any lessons materials make sure you've setted up your Python E
 
 The repository is organized into several directories, each corresponding to a specific subject, topic, or session. Here's an overview of the directory structure:
 
-0. Brief introduction to the Python language [Introduzione al Python](Intro_Python.ipynb).
+0. Brief introduction to the Python language [Introduzione al Python](Intro_Python.ipynb);
+
+1. Numerical integration methods with Trapezoid and Simpson's rule [Integrali Numerici](Lezione_26-03).
 
 
 More coming soon...
