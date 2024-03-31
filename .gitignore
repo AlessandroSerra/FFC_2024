@@ -1,0 +1,5 @@
+# ignora file di sistema mac
+.DS_store
+
+# ignora cartella di codici prova
+Codici_Prova/
