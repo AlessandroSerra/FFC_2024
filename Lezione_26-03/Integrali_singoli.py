@@ -30,7 +30,7 @@ def calcola_errore(integrale, valore_esatto):
 
 
 # provate a cambiare l'intervallo
-N_interv = 10
+N_interv = 20
 A = 0
 B = 2
 
