@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
-from matplotlib.animation import PillowWriter
-import scienceplots
 
-#plt.style.use(['science', 'notebook', 'grid'])
+# se volete salvare l'animazione togliete il commento
+# from matplotlib.animation import PillowWriter
+
 
 def acceleration(theta):
     return -G/L * np.sin(theta)
@@ -52,7 +52,7 @@ def simulate(method = verlet):
     for i in range(N_steps - 1):
 
         theta_array[i+1], vel_array[i+1] = method(theta_array[i], vel_array[i])
-        k_array[i+1], pot_array[i+1] = get_energy(theta_array[i], vel_array[i])
+        k_array[i+1], pot_array[i+1] = get_energy(theta_array[i+1], vel_array[i+1])
         time_array[i+1] = time_array[i] + Tau
 
 
@@ -104,9 +104,10 @@ palla = ax2.scatter(theta_array[0], L, s=100)
 ax2.set_theta_offset(np.deg2rad(-90))
 ax2.set_rlim([0, L+0.2*L])
 ax2.set_rticks([])
+ax2.set_title('Animazione Pendolo', fontsize=18)
 anim = animation.FuncAnimation(fig2, animate, frames=len(theta_array), interval=30, repeat=False)
 
 
-# se volete salvare l'animazione
-#anim.save('ani.gif',writer='pillow',fps=60,dpi=200)
+# se volete salvare l'animazione togliete il commento
+# anim.save('ani.gif',writer='pillow',fps=60,dpi=200)
 plt.show()

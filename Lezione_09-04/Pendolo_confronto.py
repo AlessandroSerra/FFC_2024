@@ -50,7 +50,7 @@ def simulate(method = verlet):
     for i in range(N_steps - 1):
 
         theta_array[i+1], vel_array[i+1] = method(theta_array[i], vel_array[i])
-        k_array[i+1], pot_array[i+1] = get_energy(theta_array[i], vel_array[i])
+        k_array[i+1], pot_array[i+1] = get_energy(theta_array[i+1], vel_array[i+1])
         time_array[i+1] = time_array[i] + Tau
 
 
