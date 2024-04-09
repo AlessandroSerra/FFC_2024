@@ -33,6 +33,7 @@ def calcola_errore(integrale, valore_esatto):
 
 
 
+
 # estremi dell'intervallo
 A = 0
 B = 2
