@@ -20,7 +20,9 @@ The repository is organized into several directories, each corresponding to a sp
 
 1. Numerical integration methods with Trapezoid and Simpson's rule [Integrali Numerici](Lezione_26-03);
 
-2. Solving numerically the pendolum using Eulero, Eulero-Cromer and Veocity-Verlet algorithms [ODE: Pendolo]{Lezione_09-04}.
+2. Solving numerically the pendolum using Eulero, Eulero-Cromer and Veocity-Verlet algorithms [ODE: Pendolo](Lezione_09-04);
+
+3. Solving numerically the two body orbit using Velocity-Verlet algorithm [ODE: Pianeti](Lezione_16-04).
 
 More coming soon...
 Additionally, you may find supplementary materials such as README files, documentation, or sample datasets in some directories to aid your understanding of the topics covered.
