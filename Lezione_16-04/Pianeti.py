@@ -1,7 +1,9 @@
-import vettori2d as vec
-import numpy as np
 import matplotlib.pyplot as plt
-# from astropy import G, M_sun, au
+import numpy as np
+
+import vettori2d as vec
+
+## from astropy import G, M_sun, au
 
 
 
