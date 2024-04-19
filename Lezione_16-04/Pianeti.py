@@ -8,7 +8,7 @@ def GetDistances(positions):
     dist = np.full((2, 2), fill_value=vec.vec2d())
 
     for i in range(2):
-        for j in range(i + 1, 2):
+        for j in range(i+1, 2):
 
             dist[i, j] = positions[i] - positions[j]
             dist[j, i] = -dist[i, j]
@@ -18,18 +18,16 @@ def GetDistances(positions):
 
 def GetAccelerations(dist):
 
-    forces = np.full((2, 2), fill_value=vec.vec2d())
+    acc = np.full((2, 2), fill_value=vec.vec2d())
 
     for i in range(2):
         for j in range(i + 1, 2):
 
             dist_ij = dist[i, j]
-            forces[i, j] = -G_value * np.prod(Masses) * Conv / dist_ij.mod()**2 * dist_ij.unit()
-            forces[j, i] = -forces[i, j]
+            acc[i, j] = -G_value * M_body * Conv / dist_ij.mod()**2 * dist_ij.unit()
+            acc[j, i] = -acc[i, j]
 
-    accs = np.sum(forces, axis=1) / Masses
-
-    return accs
+    return np.sum(acc, axis=1)
 
 
 # old = timestep i,   new = timestep i+1
@@ -55,24 +53,21 @@ N_cycles = 5
 Period = 1  # anni
 Tau = N_cycles * Period / N_steps  # anni
 G_value = 6.6743e-11  # m^3 kg^-1 s^-2
-M_sun = 1.988409870698051e30  # kg
-M_earth = 5.972e24
+M_body = 1.988e30  # kg
 AU_value = 149597870700.0  # m
 year2sec = np.pi * 1e7  # anni -> secondi
 Conv = AU_value**-3 * year2sec**2
 
-
-Masses = np.array([M_sun, M_earth])
 
 
 positions = np.full((2, N_steps), fill_value=vec.vec2d())
 velocities = np.full((2, N_steps), fill_value=vec.vec2d())
 
 
-Pos0_1 = vec.vec2d(0, 0)                # A.U.
-Pos0_2 = vec.vec2d(1, 0)                # A.U.
-Vel0_1 = vec.vec2d(0, 0)                # A.U./years
-Vel0_2 = vec.vec2d(0, 2*np.pi)          # A.U./years
+Pos0_1 = vec.vec2d(-2, 0)               # A.U.
+Pos0_2 = vec.vec2d(2, 0)                # A.U.
+Vel0_1 = vec.vec2d(0, -1)               # A.U./years
+Vel0_2 = vec.vec2d(0, 1)                # A.U./years
 
 positions[:,0] = Pos0_1, Pos0_2
 velocities[:,0] = Vel0_1, Vel0_2
@@ -82,12 +77,6 @@ for i in range(N_steps-1):
 
     positions[:,i+1], velocities[:,i+1] = DoVerlet(positions[:,i], velocities[:,i])
 
-
-
-max_x = np.max([positions[1,i].x for i in range(N_steps)])
-max_y = np.max([positions[1,i].y for i in range(N_steps)])
-
-print(f'Massima posizione della terra in x = {max_x}, in y = {max_y}\n')
 
 
 fig, ax = plt.subplots()
