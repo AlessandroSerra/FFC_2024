@@ -24,7 +24,9 @@ The repository is organized into several directories, each corresponding to a sp
 
 3. Solving numerically the two body orbit using Velocity-Verlet algorithm [ODE: Pianeti](Lezione_16-04);
 
-4. Fitting and analizing experimental data in Python [Curve Fitting](Lezione_30-04).
+4. Fitting and analizing experimental data in Python [Curve Fitting](Lezione_30-04);
+
+5. Solving numerically the Heat Equation with the FTCS Method [PDE: Equazione del Calore](Lezione_30-04).
 
 More coming soon...
 
