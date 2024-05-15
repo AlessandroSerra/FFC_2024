@@ -1,8 +1,11 @@
 # ignora file di sistema mac
 .DS_store
 
+# file vscode
+__pychache__/
+
 # ignora cartella di codici prova
 Codici_Prova/
 
-# file vscode
-__pychache__/
+# codici student
+Codici_Sudenti/
