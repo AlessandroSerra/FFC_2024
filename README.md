@@ -12,7 +12,7 @@ Per accedere ai contenuti della repository:
 - Creare un account su GitLab (Gratis - 30 secondi);
 - Vi potrebbe chiedere di creare un progetto, createlo a caso tanto non serve;
 - Scrivere alla mail a.serra132@studenti.unica.it il vostro nome utente e verrete aggiunti;
-- No question asket, verrete TUTTI approvati senza alcun problema e potrete visualizzare/usare tutto quello che volete.
+- No question asked, verrete TUTTI approvati senza alcun problema e potrete visualizzare/usare tutto quello che volete.
 
 ---
 Alessandro Serra - a.serra132@studenti.unica.it
